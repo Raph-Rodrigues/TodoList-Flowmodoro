@@ -6,6 +6,6 @@
 			 x:Class="TodoList_Flowmodoro.Views.MainPage"
              Title="TODO">
 
-   
+   <Label Text="Hello World!" TextColor="BurlyWood" HorizontalOptions="Center" VerticalOptions="Center"/>
 
 </ContentPage>

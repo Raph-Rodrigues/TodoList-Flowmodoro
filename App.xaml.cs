@@ -1,4 +1,6 @@
-﻿namespace TodoList_Flowmodoro;
+﻿using TodoList_Flowmodoro.Views;
+
+namespace TodoList_Flowmodoro;
 
 public partial class App : Application
 {
@@ -9,6 +11,7 @@ public partial class App : Application
 
     protected override Window CreateWindow(IActivationState? activationState)
     {
-        return new Window(new AppShell());
+        //return new Window(new AppShell());
+        return new Window(new TodoList());
     }
 }
