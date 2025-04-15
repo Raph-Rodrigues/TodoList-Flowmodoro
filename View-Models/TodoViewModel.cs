@@ -1,6 +1,12 @@
-﻿namespace TodoList_Flowmodoro.View_Models;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using CommunityToolkit.Mvvm.ComponentModel;
+using TodoList_Flowmodoro.Models;
 
-public class TodoViewModel
+namespace TodoList_Flowmodoro.View_Models;
+
+public partial class TodoViewModel 
 {
     
 }
