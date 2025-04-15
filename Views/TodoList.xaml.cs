@@ -6,4 +6,16 @@ public partial class TodoList : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private void MenuItem_OnClicked(object? sender, EventArgs e)
+	{
+		try
+		{
+			Navigation.PushAsync(new NewItem());
+		}
+		catch (Exception ex)
+		{
+			DisplayAlert("Ops", ex.Message, "OK");
+		}
+	}
 }

@@ -3,10 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TodoList_Flowmodoro.Views.NewItem"
              Title="NewItem">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Salvar" Clicked="MenuItem_OnClicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <VerticalStackLayout Spacing="16" Margin="16">
+        <Label Text="Título da tarefa" FontSize="30"/>
+        <Label Text="Descrição da tarefa"/>
+        <Entry x:Name="txt_description"/>
+        <Label Text="Categoria"/>
+        
+        <CheckBox x:Name="cbx_isCompleted"/>
     </VerticalStackLayout>
 </ContentPage>

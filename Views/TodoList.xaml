@@ -6,7 +6,7 @@
     
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Somar"/>
-        <ToolbarItem Text="Adicionar"/>
+        <ToolbarItem Text="Adicionar" Clicked="MenuItem_OnClicked"/>
     </ContentPage.ToolbarItems>
     <VerticalStackLayout>
         <Label 
